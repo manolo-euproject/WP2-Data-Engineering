@@ -1,0 +1,38 @@
+\documentclass{article} 
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+
+\newcommand{\term}[1]{\textit{#1}}
+\newcommand{\quotes}[1]{`#1'}
+
+\newcommand{\mycomment}[2]
+{
+\begin{quote}
+\textbf{#1:}
+     #2
+\end{quote}
+}
+%\renewcommand{\mycomment}[2]{}
+
+\title{Data Inspection and Generation 1}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\section{Data Management and Provenance Framework}
+\input{task1}
+
+\section{Data Quality Estimation}
+\input{task2}
+
+\section{Data Distillation and Synthetic Feature Representation}
+\input{task3}
+
+\end{document}
