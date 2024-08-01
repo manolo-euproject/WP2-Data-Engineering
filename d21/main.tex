@@ -25,6 +25,68 @@
 
 \section{Introduction}
 
+\subsection{Scope of Deliverable}
+
+This report, titled \quotes{Data Inspection and Generation v.1},
+documents research \& development work carried out in WP2 during
+Phase~2 \emph{MANOLO Framework Implementation} of the project's
+workplan.
+
+Besides the report itself, the scope of this deliverable also comprises
+the intermediate versions of the following software components:
+%
+\begin{itemize}
+\item The \emph{Data Operations Manager}
+\item The \emph{Data Quality Estimation Component}
+\item The \emph{Data Distillation and Synthesis Component}
+\end{itemize}
+
+Work in WP2 also includes preparing and ingesting the use case
+datasets in the data operations manager, but this is outside the scope
+of this version of the deliverable and will be reported in v.2 (M24).
+
+\subsection{Structure of Deliverable}
+
+Taking the above into consideration, this remainder of this document
+is structured as follows:
+%
+\begin{itemize}
+\item Chapter 2 -- TITLE: MANOLO presents to its cloud-edge operators
+  a complicated provenance and lineage environment where the different
+  assets, i.e., datasets, algorithms, models, resources are multiply
+  interlinked, providing explanation of the capacities, data, metadata
+  and their relationships. For regulatory as well as pragmatic
+  reasons, MANOLO will need to ensure that project assets are
+  integrated with the MANOLO data (assets) management sub-system, so
+  that provenance and lineage metadata is automatically maintained.
+  The Data Operations Manager will manage this functionality and
+  expose APIs which will be supporting the overall project and MANOLO
+  research and toolset.
+\item Chapter 3 -- TITLE: Mechanisms for data quality estimation will
+  be developed, tested and integrated in this component by focussing
+  on detecting and correcting anomalous data and automatically
+  annotating data in terms of quality. Mechanisms for noise detection
+  (including biased data due to gender, race, or other variables) as
+  well as data maliciously manipulated will be given a special
+  emphasis, employing adversarial machine learning while considering
+  associated models.
+\item Chapter 4 -- TITLE: Techniques for data distillation will be
+  explored here such that will provide a good foundation and a richer
+  dataset to support the research in the Hardware-aware Model Training
+  and Optimisation component. This will produce new derived
+  (synthetic) data using methods for distillation via data compression
+  and hashing, feature extraction and synthesisation; and model
+  inversion for synthesisation of data from labels. Data compression
+  will ensure the reduction of storage necessities as well as a
+  faster, while accurate, training pipelines and lighter
+  models. Feature extraction and synthesisation will allow us to
+  propose meta-data for meta learning tasks. The creation of synthetic
+  data from labels is a technique that will help us gather reliable
+  datasets from accurate pretrained architectures to keep a useful
+  repository for their application to posterior training processes
+  where data are not satisfactory for quality, quantity or
+  availability due to ethical reasons.
+\end{itemize}
 
 \section{Data Management and Provenance Framework}
 \input{task1}
