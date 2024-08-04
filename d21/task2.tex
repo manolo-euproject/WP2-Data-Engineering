@@ -1,14 +1,57 @@
-%(M5-M24) (Leader: NCSR "D", support: NUIDUCD-CeADAR, UPC, ATOS IT, EVIDEN
-%RO, FDI, INRIA, ARCADA, PAL ROBOTICS, Bit&Brain, ARX.NET S.A.)
+% (M5-M24) Leader: NCSR "D"
+% CeADAR, UPC, ATOS, EVIDEN, FDI, INRIA, ARCADA, use case partners
 
-\mycomment{Task description}{%
+\section{Introduction}
+
 This task will implement a range of methods for automatically
-annotating data with respect to quality or possible
-unreliability. MANOLO will explore anomaly detection and other noise
-detection methods that will allow identifying biased, noisy,
-inconsistent, or in general low-quality data, as well as data
-maliciously manipulated to contaminate the model during training. For
-these purposes, data augmentation techniques based on adversarial
-machine learning methods (such as controlled noise contamination of
-the dataset) will be used. The output of this task will be partially
-used in Task 2.3 and will be integrated in Task 2.1.}
+annotating data with respect to quality or possible unreliability.
+
+We will explore anomaly detection and other noise detection methods
+that will allow identifying biased, noisy, inconsistent, or in general
+low-quality data, as well as data maliciously manipulated to
+contaminate the model during training. For these purposes, data
+augmentation techniques based on adversarial machine learning methods
+(such as controlled noise contamination of the dataset) will be used.
+
+\section{Related Work}
+
+Anomaly detection and other prior works that are domain-agnostic or
+easily transferrable.
+
+
+\section{Directing Attention at Low-Quality Data}
+
+Background on Attention and the Transformer.
+
+Core idea: observing the trained Attention module can identify the
+characteristics of signal where attention was \emph{not} directed.
+The expectation is that (ideally) loss due to inconsistent data will
+be handled by directing attention away from inconsistent data instead
+of training the network to work around it.
+
+
+\section{Data Augmentation and Adversarial ML}
+
+\mycomment{Expected contributions}%
+{CeADAR to contribute regarding data augmentation}
+
+
+\section{Experiments on Timeseries Processing}
+
+\mycomment{Expected contributions}%
+{BitBrain to contribute regarding background work on EEG quality estimation.}
+
+\mycomment{Expected contributions}%
+{PAL and BitBrain to contribute regarding the experimental setup.}
+
+\section{Experiments on Computer Vision}
+
+\mycomment{Expected contributions}%
+{ARX.NET to contribute regarding background work on image quality estimation.}
+
+\mycomment{Expected contributions}%
+{PAL and ARX.NET to contribute regarding the experimental setup.}
+
+
+\section{Conclusions}
+

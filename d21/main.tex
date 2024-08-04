@@ -1,4 +1,4 @@
-\documentclass{article} 
+\documentclass{report}
 
 \usepackage{natbib}
 \usepackage{graphicx}
@@ -17,15 +17,15 @@
 }
 %\renewcommand{\mycomment}[2]{}
 
-\title{Data Inspection and Generation 1}
+\title{Data Inspection and Generation v.1}
 
 \begin{document}
 
 \maketitle
 
-\section{Introduction}
+\chapter{Introduction}
 
-\subsection{Scope of Deliverable}
+\section{Scope of Deliverable}
 
 This report, titled \quotes{Data Inspection and Generation v.1},
 documents research \& development work carried out in WP2 during
@@ -45,7 +45,7 @@ Work in WP2 also includes preparing and ingesting the use case
 datasets in the data operations manager, but this is outside the scope
 of this version of the deliverable and will be reported in v.2 (M24).
 
-\subsection{Structure of Deliverable}
+\section{Structure of Deliverable}
 
 Taking the above into consideration, this remainder of this document
 is structured as follows:
@@ -88,13 +88,15 @@ is structured as follows:
   availability due to ethical reasons.
 \end{itemize}
 
-\section{Data Management and Provenance Framework}
+\chapter{Data Management and Provenance Framework}
 \input{task1}
 
-\section{Data Quality Estimation}
+\chapter{Data Quality Estimation}
 \input{task2}
 
-\section{Data Distillation and Synthetic Feature Representation}
+\chapter{Data Distillation and Synthetic Feature Representation}
 \input{task3}
+
+\chapter{Conclusion}
 
 \end{document}
