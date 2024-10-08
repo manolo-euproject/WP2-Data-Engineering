@@ -2,20 +2,17 @@
 
 \usepackage{natbib}
 \usepackage{graphicx}
-\graphicspath{{figures/}}
+\usepackage{amsmath}
+\usepackage{xcolor}
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+\graphicspath{{figures/}}
 
 \newcommand{\term}[1]{\textit{#1}}
 \newcommand{\quotes}[1]{`#1'}
 
-\newcommand{\mycomment}[2]
-{
-\begin{quote}
-\textbf{#1:}
-     #2
-\end{quote}
-}
-%\renewcommand{\mycomment}[2]{}
+\newcommand{\mycomment}[2]{\textbf{[#1]:} #2}
 
 \title{Data Inspection and Generation v.1}
 
