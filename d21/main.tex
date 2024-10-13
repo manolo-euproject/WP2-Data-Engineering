@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass{manolo}
 
 \usepackage{natbib}
 \usepackage{graphicx}
@@ -18,14 +18,149 @@
 %\renewcommand{\mycomment}[2]{}
 
 \title{Data Inspection and Generation v.1}
+\deliverable{2.1}
+\version{1}
+\lead{NCSR}
+\submission{Draft}
+
 
 \begin{document}
 
 \maketitle
 
-\chapter{Introduction}
+\begin{NiceTabular}{m{0.26\textwidth}m{0.72\textwidth}}[colortbl-like]
+\CodeBefore
+  \rowcolor{mylblue}{3,5,7}
+  \cellcolor{myblue}{3-1}
+  \cellcolor{myblue}{4-1}
+  \cellcolor{myblue}{5-1}
+  \cellcolor{myblue}{6-1}
+  \cellcolor{myblue}{7-1}
+\Body
+\multicolumn{2}{l}{\textcolor{myblue}{\bf Document Information}} \\
+\multicolumn{2}{l}{} \\
+\textcolor{white}{Issued by:}   & \thelead         \\
+\textcolor{white}{Issue date:}  & \thesubmission   \\
+\textcolor{white}{Due date:}    & 31 December 2024 \\
+\textcolor{white}{Work package leader:} & NCSR     \\
+\textcolor{white}{Dissemination level:} & Public   \\
+\end{NiceTabular}
 
-\section{Scope of Deliverable}
+\vskip 3em
+
+\begin{NiceTabular}{m{0.14\textwidth}m{0.2\textwidth}m{0.64\textwidth}}[colortbl-like]
+\CodeBefore
+  \rowcolor{white}{1,2}
+  \rowcolor{myblue}{3}
+  \rowcolor{mylblue}{4,6}
+\Body
+\multicolumn{3}{l}{\textcolor{myblue}{\bf Document History}} \\
+\multicolumn{3}{l}{} \\
+\textcolor{white}{Version} &
+\textcolor{white}{Date} &
+\textcolor{white}{Modifications made by} \\
+0.1 & June 2024 & Document structure by NCSR \\
+0.2 &           & \\
+0.3 &           & \\
+\end{NiceTabular}
+
+\vskip 3em
+
+\begin{NiceTabular}{m{0.69\textwidth}m{0.29\textwidth}}[colortbl-like]
+\CodeBefore
+  \rowcolor{white}{1,2}
+  \rowcolor{myblue}{3}
+  \rowcolor{mylblue}{4,6,8}
+\Body
+\multicolumn{2}{l}{\textcolor{myblue}{\bf Authors}} \\
+\multicolumn{2}{l}{} \\
+\textcolor{white}{Name} &
+\textcolor{white}{Beneficiary} \\
+S. Konstantopoulos, N. Koliou & NCSR \\
+                              & NUIDUCD – CeADAR \\
+                              & ARX.net \\
+                              & FDI \\
+                              & ATOS \\
+\end{NiceTabular}
+
+
+\noindent
+In case you want any additional information, or you want to consult
+with the authors of this document, please send your inquiries to:
+konstant@iit.demokritos.gr
+
+\vskip 3em
+
+\begin{NiceTabular}{m{0.69\textwidth}m{0.29\textwidth}}[colortbl-like]
+\CodeBefore
+  \rowcolor{white}{1,2}
+  \rowcolor{myblue}{3}
+  \rowcolor{mylblue}{4}
+\Body
+\multicolumn{2}{l}{\textcolor{myblue}{\bf Quality Reviewers}} \\
+\multicolumn{2}{l}{} \\
+\textcolor{white}{Name} &
+\textcolor{white}{Beneficiary} \\
+Name  & Partner \\
+Name  & Partner \\
+\end{NiceTabular}
+
+\vfill
+
+\begin{NiceTabular}{m{0.98\textwidth}}[colortbl-like]
+\CodeBefore
+\rowcolor{mylblue}{1,2,4,5}
+\Body
+\bf Disclaimer \\
+Funded by the European Union under GA no. 101135782. Views
+and opinions expressed are however those of the authors only and do
+not necessarily reflect those of the European Union or CNECT. Neither
+the European Union nor the granting authority can be held responsible
+for them. \\
+\\
+\bf \copyright MANOLO Consortium, 2024 \\
+Reproduction is authorised provided the source is acknowledged. \\
+\end{NiceTabular}
+
+\clearpage
+
+\tableofcontents
+
+\clearpage
+
+\listoffigures
+
+
+\listoftables
+
+\clearpage
+
+\begin{NiceTabular}{m{0.19\textwidth}m{0.79\textwidth}}[colortbl-like]
+\CodeBefore
+  \rowcolor{white}{1,2}
+  \rowcolor{myblue}{3}
+  \rowcolor{mylblue}{4}
+\Body
+\multicolumn{2}{l}{\textcolor{myblue}{\bf List of Terms and Definitions}} \\
+\multicolumn{2}{l}{} \\
+\textcolor{white}{Term} &
+\textcolor{white}{Definition} \\
+My Term           &
+This is a term \\
+Machine Learning  &
+This is another term \\
+\end{NiceTabular}
+
+
+\section*{Executive Summary}
+
+This is a summary
+
+
+
+\section{Introduction}
+
+\subsection{Scope of Deliverable}
 
 This report, titled \quotes{Data Inspection and Generation v.1},
 documents research \& development work carried out in WP2 during
@@ -45,7 +180,7 @@ Work in WP2 also includes preparing and ingesting the use case
 datasets in the data operations manager, but this is outside the scope
 of this version of the deliverable and will be reported in v.2 (M24).
 
-\section{Structure of Deliverable}
+\subsection{Structure of Deliverable}
 
 Taking the above into consideration, this remainder of this document
 is structured as follows:
@@ -88,15 +223,15 @@ is structured as follows:
   availability due to ethical reasons.
 \end{itemize}
 
-\chapter{Data Management and Provenance Framework}
+\section{Data Management and Provenance Framework}
 \input{task1}
 
-\chapter{Data Quality Estimation}
+\section{Data Quality Estimation}
 \input{task2}
 
-\chapter{Data Distillation and Synthetic Feature Representation}
+\section{Data Distillation and Synthetic Feature Representation}
 \input{task3}
 
-\chapter{Conclusion}
+\section{Conclusion}
 
 \end{document}
