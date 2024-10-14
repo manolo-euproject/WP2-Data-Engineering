@@ -2,20 +2,17 @@
 
 \usepackage{natbib}
 \usepackage{graphicx}
-\graphicspath{{figures/}}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+\graphicspath{{figures/}}
 
 \newcommand{\term}[1]{\textit{#1}}
 \newcommand{\quotes}[1]{`#1'}
 
-\newcommand{\mycomment}[2]
-{
-\begin{quote}
-\textbf{#1:}
-     #2
-\end{quote}
-}
-%\renewcommand{\mycomment}[2]{}
+\newcommand{\mycomment}[2]{\textbf{[#1]:} #2}
 
 \title{Data Inspection and Generation v.1}
 \deliverable{2.1}
@@ -157,6 +154,7 @@ This is another term \\
 This is a summary
 
 
+\clearpage
 
 \section{Introduction}
 
@@ -223,15 +221,19 @@ is structured as follows:
   availability due to ethical reasons.
 \end{itemize}
 
+\clearpage
 \section{Data Management and Provenance Framework}
 \input{task1}
 
+\clearpage
 \section{Data Quality Estimation}
 \input{task2}
 
+\clearpage
 \section{Data Distillation and Synthetic Feature Representation}
 \input{task3}
 
+\clearpage
 \section{Conclusion}
 
 \end{document}

@@ -31,10 +31,10 @@
 \RequirePackage{xifthen}
 \RequirePackage{array}
 \RequirePackage{tabularx}
-\RequirePackage[usenames,dvipsnames]{color}
 \RequirePackage{lastpage}
+\RequirePackage{sectsty}
 
-% Colourful arrays
+\RequirePackage[usenames,dvipsnames]{color}
 %\RequirePackage{xcolor}
 \RequirePackage{nicematrix}
 
@@ -221,7 +221,7 @@
 {\color{myblue}\thesubsection}{1em}{}
 
 \titleformat{\subsubsection}
-{\color{myblue}\normalfont\itseries}
+{\color{myblue}\normalfont}
 {\color{myblue}\thesubsubsection}{1em}{}
 
 \titlespacing\section{0pt}{0pt plus 0pt minus 0pt}{5pt plus 0pt minus 0pt}
