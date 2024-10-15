@@ -184,7 +184,7 @@ Taking the above into consideration, this remainder of this document
 is structured as follows:
 %
 \begin{itemize}
-\item Chapter 2 -- TITLE: MANOLO presents to its cloud-edge operators
+\item Section~\ref{sec:datmgmt}: MANOLO presents to its cloud-edge operators
   a complicated provenance and lineage environment where the different
   assets, i.e., datasets, algorithms, models, resources are multiply
   interlinked, providing explanation of the capacities, data, metadata
@@ -195,7 +195,7 @@ is structured as follows:
   The Data Operations Manager will manage this functionality and
   expose APIs which will be supporting the overall project and MANOLO
   research and toolset.
-\item Chapter 3 -- TITLE: Mechanisms for data quality estimation will
+\item Section~\ref{sec:datqual}: Mechanisms for data quality estimation will
   be developed, tested and integrated in this component by focussing
   on detecting and correcting anomalous data and automatically
   annotating data in terms of quality. Mechanisms for noise detection
@@ -203,7 +203,8 @@ is structured as follows:
   well as data maliciously manipulated will be given a special
   emphasis, employing adversarial machine learning while considering
   associated models.
-\item Chapter 4 -- TITLE: Techniques for data distillation will be
+\item Sections~\ref{sec:datdist} to~\ref{sec:featextr}:
+  Techniques for data distillation will be
   explored here such that will provide a good foundation and a richer
   dataset to support the research in the Hardware-aware Model Training
   and Optimisation component. This will produce new derived
@@ -223,15 +224,28 @@ is structured as follows:
 
 \clearpage
 \section{Data Management and Provenance Framework}
+\label{sec:datmgmt}
 \input{task1}
 
 \clearpage
 \section{Data Quality Estimation}
+\label{sec:datqual}
 \input{task2}
 
 \clearpage
-\section{Data Distillation and Synthetic Feature Representation}
-\input{task3}
+\section{Data Distillation}
+\label{sec:datdist}
+\input{task3-distillation}
+
+\clearpage
+\section{Data and Feature Synthetisation}
+\label{sec:datsynth}
+\input{task3-synthesis}
+
+\clearpage
+\section{Feature Extraction}
+\label{sec:featextr}
+\input{task3-extraction}
 
 \clearpage
 \section{Conclusion}
